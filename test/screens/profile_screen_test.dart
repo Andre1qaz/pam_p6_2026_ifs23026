@@ -3,9 +3,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:go_router/go_router.dart';
-import 'package:pam_p6_2026_ifs18005/core/theme/app_theme.dart';
-import 'package:pam_p6_2026_ifs18005/core/theme/theme_notifier.dart';
-import 'package:pam_p6_2026_ifs18005/features/profile/profile_screen.dart';
+import 'package:pam_p6_2026_ifs23026/core/theme/app_theme.dart';
+import 'package:pam_p6_2026_ifs23026/core/theme/theme_notifier.dart';
+import 'package:pam_p6_2026_ifs23026/features/profile/profile_screen.dart';
 
 Widget buildProfileTest() {
   final notifier = ThemeNotifier(initial: ThemeMode.light);
@@ -50,14 +50,14 @@ void main() {
       await tester.pumpAndSettle();
 
       // Nama default sesuai kode
-      expect(find.text('Abdullah Ubaid'), findsOneWidget);
+      expect(find.text('Andre Christian Saragih'), findsOneWidget);
     });
 
     testWidgets('menampilkan username', (tester) async {
       await tester.pumpWidget(buildProfileTest());
       await tester.pumpAndSettle();
 
-      expect(find.text('ifs18005'), findsOneWidget);
+      expect(find.text('ifs23026'), findsOneWidget);
     });
 
     testWidgets('menampilkan kartu "Tentang Saya"', (tester) async {

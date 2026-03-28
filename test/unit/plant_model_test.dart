@@ -1,7 +1,7 @@
 // test/unit/plant_model_test.dart
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:pam_p6_2026_ifs18005/data/models/plant_model.dart';
+import 'package:pam_p6_2026_ifs23026/data/models/plant_model.dart';
 
 void main() {
   group('PlantModel', () {
